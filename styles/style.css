@@ -13,5 +13,70 @@ html{
 }
 
 body{
-    background:  #f5f6e6;  
+    background:  rgb(1, 90, 117);
+    width: 100%; 
+    min-height: 100vh;
+    display: flex; 
+}
+
+#MainContent{
+    width: 100%; 
+    min-height: 100vh;
+    display: flex;
+}
+
+#slider-section{
+    width: 50%;
+    max-width: 900px;
+    height: 50%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 0 7px rgb(167, 167, 167),
+                0 15px 50px;
+    position: relative; 
+}
+
+#slider-content{
+    display:flex; 
+    width: 500%;
+    height: 100%; 
+     
+}
+
+.sliderImg{
+    width: 100%; 
+}
+
+.sliderImg img{
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.slider-button{
+    position: absolute;
+    width: 10%; 
+    height: 10%;
+    background: rgba(255,255,255,0.4); 
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    border-radius: 50%;
+    text-align:center; 
+    font-weight: bold;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.slider-button:hover{
+    background: rgba(255,255,255,0.6);
+}
+#button-right{
+    right: 10px; 
+}
+#button-left{
+    left: 10px; 
 }
